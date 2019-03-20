@@ -1,0 +1,12 @@
+%h1 Hangman
+=image_tag @hangManImg
+%p #{@wordUI}
+%p #{@response}
+%p Guesses Left: #{@guessesLeft}
+%form
+  %p Guess your letter:
+  %input{:type => "text", :name => :guessed_letter}
+  %input{:type => "submit", :value => "Submit"}
+  %input{:type => "submit", :name => :newGame, :value => "New Game"}
+  
+  
